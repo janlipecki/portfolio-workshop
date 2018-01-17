@@ -1,11 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <title>Portfolio</title>
     
+<!--    styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+<!--    fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=latin-ext" rel="stylesheet">
+    
+    
+<!--    font awesome-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--       blok nawigacji startowej-->
+    <nav id="navigation-menu">
+        
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        
+        <ul>
+            <li><a href="#about">o mnie</a></li>
+            <li><a href="#skills">umiejętności</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">kontakt</a></li>
+        </ul>
+    </nav>
+
+
+    <!--    header: imię i nazwisko oraz posada -->
+    <header id="businesscard">
+        <div class="name-job-title">
+            <h1><span class="roboto-100">Jan</span> <span class="font-color-green">Nowak</span></h1>
+            <h2><span class="roboto-100">Front-End Developer</span></h2>
+        </div>
+    </header>
+
+
+    <!--       o mnie - zdjęcie i opis Jana Nowaka   -->
+    <section id="about">
+        <h3><span class="roboto-100">O </span><span class="font-color-green">mnie</span></h3>
+        <figure>
+            <img src="img/jan-nowak.jpg" alt="Zdjęcie-portret Jana Nowaka">
+        </figure>
+        <div class="inner-text">
+            <p class="roboto-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nihil in aliquid facilis, voluptate voluptatibus numquam sed distinctio. Corporis ipsam, mollitia cum eius nam perferendis nostrum esse, doloribus quisquam accusantium! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, iure sint praesentium exercitationem veritatis odio excepturi nobis corporis non quas velit dolor sit sunt explicabo optio ab. Error, laborum, debitis.</p>
+        </div>
+        <div class="last-child"></div>
+    </section>
+    
+    <!--    moje umiejętności-->
+    <section id="skills">
+        <h3>Moje umiejętności</h3>
+        <p class="inner-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum accusantium nisi recusandae repudiandae amet, ipsa enim ullam suscipit repellendus quam quidem molestias rem, fuga similique non quaerat. Inventore, labore iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quod sunt facilis voluptas ducimus, placeat reiciendis, nihil quo accusamus odit assumenda ex.</p>
+        
+        <figure class="icon">
+            <img src="icons/html5.png" alt="">
+            <figcaption>HTML</figcaption>
+        </figure>
+        
+        <figure class="icon">
+            <img src="icons/css3.png" alt="">
+            <figcaption>CSS</figcaption>
+        </figure>
+        
+        <figure class="icon">
+            <img src="icons/js.png" alt="">
+            <figcaption>JavaScript</figcaption>
+        </figure >
+        
+        <figure class="icon">
+            <img src="icons/jquery.png" alt="">
+            <figcaption>jQuery</figcaption>
+        </figure>
+<!-- PONIŻEJ KOD KTÓRY DZIAŁAŁ, ALE BYŁ OPARTY NA DIVACH:
+        P
+        <div class="icon"><img src="icons/html5.png" alt="">
+            <br/>
+            <br/>
+            HTML5<br/>
+            <br/>    
+        </div>
+        <div class="icon"><img src="icons/css3.png" alt="">
+            <br/>
+            <br/>
+            CSS3<br/>
+            <br/> 
+        </div>
+        <div class="icon"><img src="icons/js.png" alt="">
+            <br/>
+            <br/>
+            JavaScript<br/>
+            <br/> 
+        </div>
+        <div class="icon"><img src="icons/jquery.png" alt="">
+            <br/>
+            <br/>
+            jQuery<br/>
+            <br/> 
+        </div>
+-->
+    </section>
+<!--    moje portfolio-->
+    <section id="portfolio">
+        <h3>Moje portfolio</h3>
+            <div id="portfolio1" class="portfolio-square">
+                <div class="portfolio-mask">
+                    <div class="portfolio-frame">
+                        <div class="portfolio-text">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum quia, laudantium minima quos id hic earum. Consequatur doloremque quasi maxime eum, maiores autem ex, tempore debitis assumenda dignissimos nostrum!</p>
+                            <h4>Wykorzystane technologie:</h4>
+                            <p>HTML, CSS, RWD, Bootstrap</p>
+                            <a href=""><i class="fa fa-chain fa-2x"></i></a>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio2" class="portfolio-square">
+                <div class="portfolio-mask">
+                    <div class="portfolio-frame">
+                        <div class="portfolio-text">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum quia, laudantium minima quos id hic earum. Consequatur doloremque quasi maxime eum, maiores autem ex, tempore debitis assumenda dignissimos nostrum!</p>
+                            <h4>Wykorzystane technologie:</h4>
+                            <p>HTML, CSS, RWD, Bootstrap</p>
+                            <a href=""><i class="fa fa-chain fa-2x"></i></a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio3" class="portfolio-square">
+                <div class="portfolio-mask">
+                    <div class="portfolio-frame">
+                        <div class="portfolio-text">
+                            <h3>Lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio cum quia, laudantium minima quos id hic earum. Consequatur doloremque quasi maxime eum, maiores autem ex, tempore debitis assumenda dignissimos nostrum!</p>
+                            <h4>Wykorzystane technologie:</h4>
+                            <p>HTML, CSS, RWD, Bootstrap</p>
+                            <a href=""><i class="fa fa-chain fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!--trzeba wystylować linka-->
+<!--i z ikonką kotwicy powinno iść do linka-->
+    <section id="contact">
+        <div class="contact-data">
+            <h3>Jan Nowak</h3>
+            
+            <adress>
+            <br/>ul. Mostowa 6/13
+            <br/>31-061 Kraków
+            <br/>
+            <br/>tel. 606 74 57 59
+            <br/>e-mail: example@example.pl
+            </adress>
+            
+            <div class="sm-icons">
+            <a href=""><i class="fa fa-facebook fa-2x"></i></a>
+            <a href=""><i class="fa fa-google-plus fa-2x"></i></a>
+            <a href=""><i class="fa fa-twitter fa-2x"></i></a>
+            <a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+        <div class="form">
+           <form action="">
+               <input type="text" id="name">
+               <input type="email" id="mail">
+               <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+           </form>
+           <input type="submit">
+        </div>
+        <div class="last-child"></div>
+    </section>
+    
+    <footer>
+        <p>Copyright &copy; Jan Nowak</p>
+    </footer>
+
 </body>
+
 </html>

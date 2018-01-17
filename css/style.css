@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+}
+
+h3 {
+    font-family: 'lato', sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+.font-color-green {
+    color: rgb(26,192,86);
+}
+
+#navigation-menu .toggle,
+#drop {
+    display: none;
+}
+
+#navigation-menu {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 80px;
+    z-index: 1;
+}
+
+#navigation-menu ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+    background-color: white;
+}
+
+#navigation-menu ul li {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    line-height: 40px;
+}
+
+#navigation-menu a {
+    text-decoration: none;
+    color: #1ac056;
+    font-size: 20px;
+    font-family: 'lato', sans-serif;
+    transition: all 0.4s;
+}
+
+#navigation-menu a:hover {
+    color: blue;
+}
+
+#businesscard {
+    height: 80vh;
+    background-image: url(../img/header-background.jpg);
+/*    background: url(../img/header-background.jpg) no-repeat */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#businesscard .name-job-title {
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 100%;
+    line-height: 50px;
+    top: 30%;
+/*    top 50% dawał Marcin*/
+/*    left: 40%;*/
+    font-family: 'Roboto', sans-serif;
+/*    łapanie przez spany*/
+/*    na rodzicu można ustawić kolor - bo jest dziedziczony*/
+}
+
+#businesscard .roboto-100 {
+    font-weight: 100;
+}
+
+#businesscard .name-job-title h1 {
+    font-size: 140px;
+    padding-bottom: 0px;
+}
+
+#businesscard .name-job-title h2 {
+    color: white;
+    font-size: 40px;
+}
+/*font weight - 300, można złapać po , ; h1 60, h2 40 - tak dawał Marcin*/
+
+/*sekcja: about*/
+
+#about {
+    background-color: rgb(249,252,254);
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#about .roboto-100 {
+    font-weight: 100;
+}
+
+#about h3 {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#about figure {
+    background-color: rgb(249,252,254);
+    width: 50%;
+    float: left;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+}
+
+#about figure img {
+    width: 50%;
+    border: 10px solid white;
+    border-radius: 25px;
+}
+
+#about .inner-text {
+    width: 50%;
+    display: inline-block;
+    float: left;
+    font-family: 'lato', sans-serif;
+    line-height: 150%;
+}
+
+.last-child {
+   clear: both; 
+}
+
+/*sekcja: moje umiejętności*/
+
+#skills {
+    text-align: center;
+    margin-bottom: 400px;
+/*    tutaj dałem margin-bottom do głównej sekcji żeby zrobić przestrzeń na dole żeby było łatwiej, ale na przyszłość tak nie rób! ikonki powinieneś zapakować w jeszcze jedno pudełko*/
+}
+
+#skills .inner-text {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#skills .icon {
+    text-align: center;
+    display: inline-block;
+    padding: 30px;
+}
+
+#skills figcaption {
+    margin-top: 15px;
+}
+
+/*sekcja: Moje portfolio*/
+
+#portfolio {
+    margin: auto;
+    width: 90%;
+    height: 550px;
+    text-align: center;
+    color: white;
+}
+
+#portfolio > h3 {
+    color: pink;
+}
+
+#portfolio1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+#portfolio2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+#portfolio3 {
+    background-image: url(../img/portfolio3.jpg);
+}
+
+#portfolio .portfolio-square {
+    width: 33.3333%;
+    height: 400px;
+    display: inline-block;
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#portfolio .portfolio-square .portfolio-mask {
+    height: 100%;
+/*      ^^^^  trzeba dać wysokość bo inaczej się nie pojawi*/
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+#portfolio .portfolio-square .portfolio-mask:hover {
+    background-color: rgba(42,61,79,0.8);
+    opacity: 1;
+    
+}
+
+#portfolio .portfolio-square .portfolio-mask .portfolio-frame {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+}
+
+#portfolio .portfolio-square .portfolio-mask .portfolio-frame .portfolio-text {
+    text-align: center;
+}
+
+#portfolio .portfolio-square .portfolio-mask .portfolio-frame .portfolio-text p {
+    margin-top: 0px;
+    padding: 0px 10px 5px 10px;
+}
+
+/*sekcja Kontakt*/
+#contact {
+    background-color: #213b50;
+    padding: 30px;
+}
+
+#contact .contact-data {
+    width: 50%;
+    text-align: left;
+    float: left;
+}
+
+#contact .contact-data h3 {
+    text-align: left;
+}
+
+#contact .contact-data adress {
+    line-height: 100%;
+}
+
+#contact .form {
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+
+/*
+#contact .contact-data .fa {
+    width: 45px;
+    height: 45px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+*/
+
+/*stylowanie po linku!!!*/
+
+/* poniżej tak jak to zrobił Marcin */
+
+#contact .sm-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    color: white;
+}
+
+#contact .sm-icons a i {
+    line-height: inherit;
+}
+
+#contact .form form input:focus {
+    border-color: #FFF;
+}
+
+/*footer*/
+footer {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(20, 38, 52);
+    height: 50px;
+}
+
+footer p {
+    margin: 0;
+    padding: 20;
+    background-color: rgb(20, 38, 52);
+    -webkit-margin-before: 0;
+}
+

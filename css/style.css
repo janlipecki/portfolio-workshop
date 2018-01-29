@@ -12,6 +12,10 @@ h3 {
     color: rgb(26,192,86);
 }
 
+.font-weight-100 {
+    font-weight: 100;
+}
+
 #navigation-menu .toggle,
 #drop {
     display: none;
@@ -141,14 +145,20 @@ h3 {
 
 #skills {
     text-align: center;
-    margin-bottom: 400px;
+    margin-bottom: 180px;
 /*    tutaj dałem margin-bottom do głównej sekcji żeby zrobić przestrzeń na dole żeby było łatwiej, ale na przyszłość tak nie rób! ikonki powinieneś zapakować w jeszcze jedno pudełko*/
+}
+
+#skills h3 .roboto-100{
+    font-weight: 100;
 }
 
 #skills .inner-text {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 #skills .icon {
@@ -158,7 +168,9 @@ h3 {
 }
 
 #skills figcaption {
-    margin-top: 15px;
+    margin-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
 }
 
 /*sekcja: Moje portfolio*/
@@ -172,7 +184,7 @@ h3 {
 }
 
 #portfolio > h3 {
-    color: pink;
+    color: black;
 }
 
 #portfolio1 {
@@ -293,14 +305,15 @@ h3 {
 footer {
     color: white;
     font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     background-color: rgb(20, 38, 52);
-    height: 50px;
+/*    height: 50px;*/
 }
 
 footer p {
     margin: 0;
-    padding: 20;
-    background-color: rgb(20, 38, 52);
-    -webkit-margin-before: 0;
+/*    padding: 20;*/
+/*    background-color: rgb(20, 38, 52);*/
+/*    -webkit-margin-before: 0;*/
 }
 

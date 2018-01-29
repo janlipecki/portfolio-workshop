@@ -156,14 +156,14 @@
 <!--i z ikonką kotwicy powinno iść do linka-->
     <section id="contact">
         <div class="contact-data">
-            <h3>Jan Nowak</h3>
+            <h3>Jan <span class="font-color-green">Nowak</span></h3>
             
             <adress>
             <br/>ul. Mostowa 6/13
             <br/>31-061 Kraków
             <br/>
             <br/>tel. 606 74 57 59
-            <br/>e-mail: example@example.pl
+            <br/>e-mail: <a href="mailto:example@example.pl"><span class="font-color-green">example@example.pl</span></a>
             </adress>
             
             <div class="sm-icons">
@@ -175,11 +175,11 @@
         </div>
         <div class="form">
            <form action="">
-               <input type="text" id="name">
-               <input type="email" id="mail">
-               <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+               <input type="text" id="name" placeholder="Imię i nazwisko" ><br/>
+               <input type="email" id="mail" placeholder="E-mail"  ><br/>
+               <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Treść wiadomości"></textarea><br/>
            </form>
-           <input type="submit">
+           <input type="submit" value="wyślij" id="button-send">
         </div>
         <div class="last-child"></div>
     </section>
